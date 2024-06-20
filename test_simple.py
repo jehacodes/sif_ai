@@ -73,7 +73,7 @@ def upload_image(key):
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert("RGB")
         if key == "spiral":
-            image_spiral =image
+            image_spiral = image
         elif key == "wave":
             image_wave = image
         elif key == "clock":
@@ -132,7 +132,7 @@ def predict_image(model, class_names,image):
 # clock_class_names = ... (your clock class names)
 
 # Button to trigger predictions
-if st.button("Classify Images"):
+if st.button("View Test Result!"):
     if image_spiral and image_wave and image_clock:
 
         class_name_wave, confidence_score_wave = predict_image(wave_model, wave_class_names, image_wave)
