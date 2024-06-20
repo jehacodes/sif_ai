@@ -83,7 +83,7 @@ def upload_image(key):
 # Streamlit interface
 st.title("Test Drawings for Parkinson's")
 
-st.write("Upload wave, spiral and clock drawings to test for the disease.")
+st.write("Upload wave, spiral and clock drawings respectively to test for the disease.")
 
 #Layout for model inputs
 col_wave, col_spiral, col_clock=st.columns(3)
